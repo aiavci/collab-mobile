@@ -5,15 +5,33 @@ import {
 
 import React from 'react';
 import Expo from 'expo';
-
+import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon } from 'native-base';
+import Intro from './components/Intro';
 export default class App extends React.Component {
   render() {
     return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text style={{ fontSize: 56 }}>
-          Hello, world
-        </Text>
-      </View>
+      <Container>
+        <Header>
+            <Left>
+                <Button transparent>
+                    <Icon name='menu' />
+                </Button>
+            </Left>
+            <Body>
+            </Body>
+            <Right />
+        </Header>
+        <Content>
+          <Intro />
+        </Content>
+        <Footer>
+            <FooterTab>
+                <Button full>
+                    <Text>Collab</Text>
+                </Button>
+            </FooterTab>
+        </Footer>
+      </Container>
     );
   }
 }
