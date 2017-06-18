@@ -14,6 +14,9 @@ export default class Intro extends Component {
                               </Text>
                             </Body>
                             <Right>
+                              <Text>
+                                Sample Body
+                              </Text>
                             </Right>
                         </CardItem>
                    </Card>
