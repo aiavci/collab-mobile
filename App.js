@@ -5,7 +5,7 @@ import {
 
 import React from 'react';
 import Expo from 'expo';
-import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon } from 'native-base';
+import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon, Tab, Tabs } from 'native-base';
 import Intro from './components/Intro';
 import LoadingPage from './components/LoadingPage';
 export default class App extends React.Component {
@@ -28,7 +28,7 @@ export default class App extends React.Component {
     }
     return (
       <Container>
-        <Header>
+        <Header hasTabs>
             <Left>
                 <Button transparent>
                     <Icon name='menu' />
@@ -39,15 +39,17 @@ export default class App extends React.Component {
             </Body>
             <Right />
         </Header>
-        <Content>
-          <Container>
-            <Content>
-              <Intro />
-              <Intro />
-              <Intro />
-            </Content>
-          </Container>
-        </Content>
+        <Tabs>
+            <Tab heading="Tab1">
+            </Tab>
+            <Tab heading="Tab2">
+            </Tab>
+            <Tab heading="Tab3">
+            </Tab>
+        </Tabs>
+        <Intro />
+        <Intro />
+        <Intro />
         <Footer>
             <FooterTab>
                 <Button full>
