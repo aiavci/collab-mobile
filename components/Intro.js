@@ -4,24 +4,20 @@ import { Container, Content, Card, CardItem, Thumbnail, Text, Title, Button, Ico
 export default class Intro extends Component {
     render() {
         return (
-            <Container>
-                <Content>
-                    <Card>
-                        <CardItem>
-                            <Body>
-                              <Text>
-                                Sample Body (Middle)
-                              </Text>
-                            </Body>
-                            <Right>
-                              <Text>
-                                Sample Body (Right)
-                              </Text>
-                            </Right>
-                        </CardItem>
-                   </Card>
-                </Content>
-            </Container>
+            <Card>
+                <CardItem>
+                    <Body>
+                      <Text>
+                        Sample Body (Middle)
+                      </Text>
+                    </Body>
+                    <Right>
+                      <Text>
+                        Sample Body (Right)
+                      </Text>
+                    </Right>
+                </CardItem>
+           </Card>
         );
     }
 }

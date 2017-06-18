@@ -27,7 +27,7 @@ export default class App extends React.Component {
       return <LoadingPage />;
     }
     return (
-      <Container padder>
+      <Container>
         <Header>
             <Left>
                 <Button transparent>
@@ -40,7 +40,13 @@ export default class App extends React.Component {
             <Right />
         </Header>
         <Content>
-          <Intro />
+          <Container>
+            <Content>
+              <Intro />
+              <Intro />
+              <Intro />
+            </Content>
+          </Container>
         </Content>
         <Footer>
             <FooterTab>
