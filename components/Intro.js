@@ -10,12 +10,12 @@ export default class Intro extends Component {
                         <CardItem>
                             <Body>
                               <Text>
-                                Sample Body
+                                Sample Body (Middle)
                               </Text>
                             </Body>
                             <Right>
                               <Text>
-                                Sample Body
+                                Sample Body (Right)
                               </Text>
                             </Right>
                         </CardItem>
